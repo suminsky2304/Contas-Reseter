@@ -11,11 +11,11 @@ while True:
 		first_time = False
 		start_time = time()
 
-		print(datetime.now(), 'IN')
+		print(datetime.now(), 'Trap_IN')
 		with open('TRAPRESETADAS.txt', 'r') as f:
 			lines = [_.strip() for _ in f.readlines()]
 
-		print(datetime.now(), 'OUT')
+		print(datetime.now(), 'Trap_OUT')
 		with open('TRAPRESET.txt', 'w') as f:
 			f.write('\n'.join(lines[:10]))
 
