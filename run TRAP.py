@@ -6,7 +6,7 @@ start_time = time()
 first_time = True
 
 while True:
-	seconds_before_update = 350
+	seconds_before_update = 500
 
 	if (time() - start_time >= seconds_before_update) or first_time:
 		first_time = False
@@ -18,10 +18,10 @@ while True:
 
 		print(datetime.now(), 'Trap_OUT')
 		with open('TRAPRESET.txt', 'w') as f:
-			f.write('\n'.join(lines[:5]))
+			f.write('\n'.join(lines[:10]))
 
 		with open('TRAPRESETADAS.txt', 'w') as f:
-			f.write('\n'.join(lines[5:]))
+			f.write('\n'.join(lines[10:]))
 
 		os.system("git add .")
 		os.system("git commit -m 'm'")
