@@ -1,4 +1,3 @@
-import os
 from datetime import datetime
 from time import time
 
@@ -23,7 +22,4 @@ while True:
 		with open('TRAPRESETADAS.txt', 'w') as f:
 			f.write('\n'.join(lines[10:]))
 
-		os.system("git add .")
-		os.system("git commit -m 'm'")
-		os.system("git push")
-
+	
