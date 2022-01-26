@@ -18,10 +18,10 @@ while True:
 
 		print(datetime.now(), 'Trap_OUT')
 		with open('TRAPRESET.txt', 'w') as f:
-			f.write('\n'.join(lines[:10]))
+			f.write('\n'.join(lines[:5]))
 
 		with open('TRAPRESETADAS.txt', 'w') as f:
-			f.write('\n'.join(lines[10:]))
+			f.write('\n'.join(lines[5:]))
 
 		os.system("git add .")
 		os.system("git commit -m 'm'")
