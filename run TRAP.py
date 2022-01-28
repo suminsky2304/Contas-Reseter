@@ -21,5 +21,7 @@ while True:
 
 		with open('TRAPRESETADAS.txt', 'w') as f:
 			f.write('\n'.join(lines[1:]))
+			f.write("\n")
+
 
 	
