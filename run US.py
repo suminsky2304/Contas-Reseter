@@ -5,7 +5,7 @@ start_time = time()
 first_time = True
 
 while True:
-	seconds_before_update = 620
+	seconds_before_update = 60
 
 	if (time() - start_time >= seconds_before_update) or first_time:
 		first_time = False
@@ -17,8 +17,8 @@ while True:
 
 		print(datetime.now(), 'OUT_US')
 		with open('reset_contas.txt', 'w') as f:
-			f.write('\n'.join(lines[:10]))
+			f.write('\n'.join(lines[:1]))
 
 		with open('contas.txt', 'w') as f:
-			f.write('\n'.join(lines[10:]))
+			f.write('\n'.join(lines[1:]))
 
