@@ -5,7 +5,7 @@ start_time = time()
 first_time = True
 
 while True:
-	seconds_before_update = 120
+	seconds_before_update = 60
 
 	if (time() - start_time >= seconds_before_update) or first_time:
 		first_time = False
@@ -21,4 +21,5 @@ while True:
 
 		with open('contas.txt', 'w') as f:
 			f.write('\n'.join(lines[1:]))
+			f.write("\n")
 
