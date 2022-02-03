@@ -5,7 +5,7 @@ start_time = time()
 first_time = True
 
 while True:
-	seconds_before_update = 200
+	seconds_before_update = 600
 
 	if (time() - start_time >= seconds_before_update) or first_time:
 		first_time = False
